@@ -1,0 +1,14 @@
+{
+    "$id": "footballTeam.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Football Team",
+    "type": "object",
+    "properties": {
+      "teamName": { "type": "string"},
+      "country": { "type": "string"},
+      "foundedYear": { "type": "integer", "minimum": 1850},
+      "stadium": { "type": "string"}
+    },
+    "required": ["teamName", "country", "foundedYear", "stadium"]
+  }
+  
